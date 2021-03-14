@@ -5,10 +5,10 @@ import {ShoppingCart} from '@material-ui/icons';
 import useStyles from './styles'
 
 const Navbar = () => {
-  const classes = useStyles()
+  const classes = useStyles();
   return ( 
     <>
-     <AppBar position='fixed' clsasName={classes.appBar} color='inherit'>
+     <AppBar position='fixed' className={classes.appBar} color='inherit'>
       <Toolbar>
         <Typography variant='h6' className={classes.title} color='inherit'>
           <img src="https://via.placeholder.com/150" alt='commerce.js' height='25px' className={classes.image}/>
