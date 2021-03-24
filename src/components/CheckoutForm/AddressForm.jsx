@@ -55,15 +55,18 @@ const AddressForm = ({ checkoutToken, test }) => {
   };
 
   useEffect(() => {
-    fetchShippingCountries(checkoutToken.id);
+    let mounted = true;
+    if (mounted) fetchShippingCountries(checkoutToken.id);
   }, []);
 
   useEffect(() => {
-    if (shippingCountry) fetchSubdivisions(shippingCountry);
+    let mounted = true;
+    if (shippingCountry && mounted) fetchSubdivisions(shippingCountry);
   }, [shippingCountry]);
 
   useEffect(() => {
-    if (shippingSubdivision)
+    let mounted = true;
+    if (shippingSubdivision && mounted)
       fetchShippingOptions(
         checkoutToken.id,
         shippingCountry,
