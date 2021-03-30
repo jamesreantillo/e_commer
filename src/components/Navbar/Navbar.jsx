@@ -29,7 +29,7 @@ const Navbar = ({ totalItems }) => {
             color='inherit'
           >
             <img
-              src='https://via.placeholder.com/100'
+              src='https://via.placeholder.com/150'
               alt='commerce.js'
               height='25px'
               className={classes.image}
