@@ -8,7 +8,7 @@ import {
   Menu,
   Typography,
 } from '@material-ui/core';
-import { ShoppingCart } from '@material-ui/icons';
+import { ShoppingCart, ShoppingBasketIcon } from '@material-ui/icons';
 import { Link, useLocation } from 'react-router-dom';
 
 import useStyles from './styles';
@@ -28,12 +28,7 @@ const Navbar = ({ totalItems }) => {
             className={classes.title}
             color='inherit'
           >
-            <img
-              src='https://via.placeholder.com/150'
-              alt='commerce.js'
-              height='25px'
-              className={classes.image}
-            />
+            <ShoppingBasketIcon />
             Commerce
           </Typography>
           <div className={classes.grow} />
